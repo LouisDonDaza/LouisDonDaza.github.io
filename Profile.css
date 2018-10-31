@@ -1,0 +1,121 @@
+.info{
+	display:flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	background-color: snow;
+	box-sizing: border-box;
+	padding:10px;
+}
+.sidebar {
+	width:30%;
+	text-align: center;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.sidebar img {
+	border-radius: 50%;
+	max-width: 200px;
+	height: auto;
+}
+.sidebar h2{
+	font-size:25px;
+	color:black;
+	margin:0;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.sidebar h3{
+	font-size:20px;
+	color:grey;
+	padding:0px;
+	margin:0;
+}
+.sidebar ul {
+	list-style: none;
+	margin:0;
+	font-size: 30px;
+	max-width:150px;
+	padding:0;
+}
+.sidebar ul li{
+	display:inline-block;
+	text-align: center;
+	padding: 10px;
+}
+.sidebar ul li a{
+	color:black;
+}
+.sidebar ul li i:hover{
+	color:cyan;
+}
+.title{
+	width:70%;
+	color:black;
+	display:flex;
+	flex-direction: column;
+}
+.title h1 {
+	font-size: 50px;
+}
+.title h2 {
+	font-size:30px;
+}
+.title p {
+	font-size:24px;
+}
+.title .skills {
+	display:flex;
+	flex-wrap: wrap;
+	font-size:60px;
+	justify-content: center;
+	align-content:space-around;
+	padding:10px;
+}
+.title .skills i{
+	margin: 15px;
+}
+.title .skills i{
+	background: -webkit-linear-gradient(left, #E0F8F7, #585858, #fff); /* For Chrome and Safari */
+    background:    -moz-linear-gradient(left, #E0F8F7, #585858, #fff); /* For old Fx (3.6 to 15) */
+    background:     -ms-linear-gradient(left, #E0F8F7, #585858, #fff); /* For pre-releases of IE 10*/
+    background:      -o-linear-gradient(left, #E0F8F7, #585858, #fff); /* For old Opera (11.1 to 12.0) */
+    background:         linear-gradient(to right, #232323, #585858, #232323); /* Standard syntax; must be last */
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.dropdown {
+    display: none;
+    position: relative;
+    min-width: 75px;
+    padding: 3px 4px;
+    margin:0;
+    z-index: 1;
+}
+
+.skills:hover .dropdown{
+    display: block;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 768px){
+	.info{
+		display:flex;
+		flex-wrap:wrap;
+	}
+	.sidebar{
+		width:100%;
+	}
+	.title{
+		width:100%;
+	}
+	.title{
+		text-align: center;
+	}
+	.dropdown{
+		display: block;
+	}
+	
+}

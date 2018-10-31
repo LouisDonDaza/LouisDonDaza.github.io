@@ -1,0 +1,28 @@
+.uno h2{
+	font-size:35px;
+	font-weight: lighter;
+	color:cyan;
+}
+.uno {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+.uno ul li{
+	display:inline-block;
+	margin: 20px;
+	margin-top:10px;
+	margin-bottom: 15px;
+}
+.uno img{
+	width:250px;
+	height:auto;
+	border-radius: 50%;
+}
+.uno{
+	font-size: 20px;
+	color:white;
+	text-align: center;
+}
