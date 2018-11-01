@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.frontpage{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: relative;
+	width:100%;
+	height: 100vh;
+	background: url(img/BrandonFinal.png);
+	background-size:cover;
+	color:red;
+	text-shadow: -2px 2px 2px black;
+	margin: 0;
+	padding: 0;
+	font-family: "Montserrat", "Helvetica";
+}
+.frontpage h1{
+	font-size:42px;
+}
+.frontpage img{
+	width: 100px;
+	height:auto;
+	animation: logo 2s ease-in-out 2s infinite;
+}
+@keyframes logo{
+	0% {transform:rotateY(0deg);}
+	50% {transform:rotateY(0deg);}
+	62.5% {transform:rotateY(90deg);}
+	75% {transform:rotateY(180deg);}
+	87.5% {transform:rotateY(270deg);}
+	100% {transform:rotateY(360deg);}
+}
+#info{
+	display:flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	background-color: snow;
+	box-sizing: border-box;
+	padding:10px;
+	background-color: black;
+	margin-bottom: 0;
+}
+.sidebar {
+	width:30%;
+	text-align: center;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.sidebar img{
+	height: 70px;
+	width:auto;
+}
+#avi {
+	border-radius: 50%;
+	max-width: 200px;
+	height: auto;
+}
+@font-face {
+font-family: 'DemonCubicBlockFont Black';
+font-style: normal;
+font-weight: normal;
+src: local('DemonCubicBlockFont Black'), url('cubicblock_b.woff') format('woff');
+}
+
+.title{
+	width:70%;
+	color:snow;
+	display:flex;
+	flex-direction: column;
+}
+.title h1{
+	font-family:'DemonCubicBlockFont Black';
+	font-size:65px;
+	margin:0.33rem;
+	color:snow;
+}
+.title h2 {
+	font-size:24px;
+}
+.title p {
+	font-size:20px;
+}
+.line {
+	width:100%;
+	box-shadow: -2px 4px 4px snow;
+	height:3px;
+	border:none;
+	background-color: red;
+}
+#Projects{
+	text-align: center;
+	background-color: #111;
+	padding-bottom: 15px;
+}
+#Projects h1{
+	font-size: 42px;
+	color:snow;
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+.Final {
+	display:flex;
+	flex-wrap: nowrap;
+	overflow-x: scroll;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.Final img{
+	height: 400px;
+	width:auto;
+	margin:0.24rem;
+	transition: all 1s;
+}
+.Final img:hover{
+	transform: scale(1.2);
+}
+.main-footer{
+	background:#333;
+	color:#fff;
+	text-align: center;
+	padding:10px;
+}
+@media screen and (max-width: 768px){
+	.frontpage{
+		background: url(https://images-ext-2.discordapp.net/external/VZNLNMRH_XtMjPe4idEsMj7-RdhrlLaZYXJNgl6BQ90/https/i.imgur.com/uJAwaXw.jpg?width=738&height=1135);
+		background-size: cover;
+		background-position: center;
+	}
+	#info{
+		display:flex;
+		flex-wrap:wrap;
+	}
+	.sidebar{
+		width:100%;
+	}
+	.title{
+		width:100%;
+	}
+	.title{
+		text-align: center;
+	}
+}
