@@ -133,6 +133,9 @@ body {
 }
 
 @media screen and (max-width: 768px){
+	.glitch{
+		background: url(img/default.jpg);
+	}
 	.info{
 		display:flex;
 		flex-wrap:wrap;
