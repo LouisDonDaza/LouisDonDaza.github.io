@@ -198,7 +198,7 @@ h1{
 }
 @media screen and (max-width: 768px){
 	.glitch{
-		background: url(img/default.jpg);
+		background: url(img/bali.jpg);
 		background-size: cover;
 		background-position: center;
 	}
