@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit; /* Border and padding is included in the width and height */
+	color: inherit;
+}
+html {
+	font-size: 62.5%; //This defines what 1 rem is
+
+	@include respond(tab-land){
+		font-size: 56.25%; //1rem = 9px
+	}
+	@include respond(tab-port){
+		font-size: 50%; //1rem = 8px
+	}
+	@include respond(phone){
+		font-size: 31.25%;
+	}
+	@include respond(big-desktop){
+		font-size: 75%; //1rem = 12,
+	}
+}
+body{
+	box-sizing: border-box;
+	padding: 3rem;
+	@include respond(tab-port){
+		padding:0; //1rem = 8px
+	}
+}

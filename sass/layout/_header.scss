@@ -1,0 +1,39 @@
+.header{
+	height: 95vh;
+	background-image: linear-gradient(
+					to right bottom, 
+					rgba($color-primary-light,0.8),
+					rgba($color-primary-dark,0.8)), 
+	url("../img/clouds.jpg");
+	background-size:cover;
+	background-position: center;
+	position: relative;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+	@include respond(phone){
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+
+	}
+	&__text-box{
+		position: absolute;
+		top:45%;
+		left:50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		padding-bottom: 4rem;
+	}
+	&__photo{
+		width:25%;
+		border-radius: 50%;
+		box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+		margin:0 auto;
+		display: block;
+		@include respond(tab-port){
+			width: 40%;
+		}
+		@include respond(phone){
+			width:45%;
+		}
+	}
+}

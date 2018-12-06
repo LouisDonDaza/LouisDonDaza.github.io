@@ -1,105 +1,316 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Louis Don Daza</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
 </head>
-<body>
-	<div class="glitch">
-			<h1>Welcome To My Resume</h1>
-			<h2>FULL STACK SOFTWARE DEVELOPER</h2>
-	</div>
-	<div class="info">
-		<div class="sidebar">
-			<img src="img/LouisAvi.jpg" alt="Louis"/>
-			<h2>Louis Don Daza</h2>
-			<h3>Full Stack Software Developer</h3>
-			<h3>louisdaza@hotmail.com</h3>
-			<ul>
-				<li><a href="https://www.linkedin.com/in/louis-don-daza-2b710a147/"><i class="fab fa-linkedin"></i></a></li>
-				<li><a href="https://github.com/LouisDonDaza"><i class="fab fa-github"></i></a></li>
-				<li><a href="https://codepen.io/louisdjd"><i class="fab fa-codepen"></i></a></li>
-			</ul>
-		</div>
-		<div class="title">
-			<h1>Rising Software Developer</h1>
-			<h2>Profile</h2>
-			<div class="line" style="background:black; height:3px;border:none"></div>
-			<p>Versatile Front-end Developer with knowledge in designing, developing, and 
-			managing Web Applications written in Javascript or Python. Specializes in React 
-			and responsive design.</p>
-			<h2>Skills</h2>
-			<div class="line" style="background:black; height:3px;border:none"></div>
-			<div class="skills">
-				<i class="fab fa-html5"></i>
-				<div class="dropdown">
-					<p>HTML 5</p>
-				</div>
-				<i class="fab fa-css3-alt"></i>
-				<div class="dropdown">
-					<p>CSS3</p>
-				</div>
-				<i class="fab fa-js"></i>
-				<div class="dropdown">
-					<p>Javascript</p>
-				</div>
-				<i class="fab fa-node"></i>
-				<div class="dropdown">
-					<p>Node.js</p>
-				</div>
-				<i class="fab fa-react"></i>
-				<div class="dropdown">
-					<p>React</p>
-				</div>
-				<i class="fab fa-python"></i>
-				<div class="dropdown">
-					<p>Python</p>
-				</div>
-				<i class="fab fa-java"></i>
-				<div class="dropdown">
-					<p>Java</p>
-				</div>
-				<i class="fab fa-git"></i>
-				<div class="dropdown">
-					<p>Github</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="robo">
-		<h1 class="f1">RoboFriends</h1>
-		<p>Still in beta</p>
-	</div>
-	<div class ="uno">
-		<h2>Other Websites Made For Professionals</h2> 
-		<ul>
-			<li>
-				<a href="#">
-					<img src="img/ArrisProfile.jpg" alt="Arris"/>
-				</a>
-				<p>Photographer</p>
-			</li>
-			<li>
-				<a href="Brandon.html" >
-					<img src="img/Brandon.jpg" alt="Brandon"/>
-				</a>
-				<p>3D Modeler</p>
-			</li>
-			<li>
-				<a href="#">
-					<img src="img/David.jpg" alt="David"/>
-				</a>
-				<p>Animator</p>
-			</li>
-		</ul>
-	</div>
-	<div>
-		<footer class="main-footer">
-			<p>Copyright &copy; 2018 My Website</p>
-		</footer>
-	</div>
-</body>
+        <title>Louis | Full Stack Software Developer</title>
+    </head>
+    <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button"><span class="navigation__icon"></span></label>
+            <div class="navigation__background">&nbsp;</div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#about" class="navigation__link"><span>01</span>About Me</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Skills & Tools</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Website Projects</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>React Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+        <header class="header">
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">Full Stack</span>
+                    <span class="heading-primary--sub">Software Developer</span>
+                </h1>
+                <div class="u-center-text u-margin-bottom-small">
+                    <h2 class="heading-secondary">
+                        <span class="heading-secondary--main">Louis Don Daza</span>
+                    </h2>
+                </div>
+                <img src="img/MVP.jpg" alt="Profile" class="header__photo u-margin-bottom-small">
+                <a href ="#about" class="btn btn--white btn--animated">Get Started</a>
+            </div>
+        </header>
+        <main>
+            <section class="section-about" id="about">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">
+                    About Me
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Profile</h3>
+                        <p class="paragraph">Versatile Full-Stack Developer with knowledge in designing, developing, and managing Web Applications written in Javascript or Python. Specializes in React and responsive design. </p>
+                        <h3 class="heading-tertiary">Skills & Tools</h3>
+                        <p class="paragraph">HTML5, CSS3, Bootstrap, Sass, JavaScript, JQuery, React, NodeJS, Express, Python, C++ </p>
+                        <a href="https://www.linkedin.com/in/louis-don-daza-2b710a147/" class="btn-text">Learn more &rarr;</a>
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="composition">
+                            <img src="img/Philippines.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+                            <img src="img/BoysHome.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
+                            <img src="img/Lunch.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-features">
+                <div class="row">
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="feature-box__icon fab fa-css3-alt"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">HTML5 & CSS3</h3>
+                            <p class="feature-box__text">Up-to-date with the most modern and advanced CSS properties. Able to architect large CSS codebases for reusability and maintainability using Sass.</p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="feature-box__icon fab fa-js"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">JavaScript</h3>
+                            <p class="feature-box__text">Skilled in writing maintainable and reusable code, in Modern JavaScript as well its libraries such as JQuery and React.</p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="feature-box__icon fab fa-react"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">React</h3>
+                            <p class="feature-box__text">Experienced in building and refactoring composable React Components. Connected front-end Create-React-App server to a NodeJS and Express backend</p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="feature-box__icon fab fa-python"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">Python</h3>
+                            <p class="feature-box__text">Capable of implementing data structures and algorithms such as Bubble Sort and Merge Sort</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-tours" id="section-tours">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">
+                    Website Projects
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-3">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--1">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading--span card__heading--span--1">
+                                        The 3D Modeler
+                                    </span>
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li>3 day tour</li>
+                                        <li>Up to 30 people</li>
+                                        <li>2 tourguides</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card__side card__side--back card__side--back--1">
+                                <div class="card__cta">
+                                    <a href="Brandon.html" class="btn btn--white">Visit!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--2">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading--span card__heading--span--2">
+                                        The Photographer
+                                    </span>
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li>7 day tour</li>
+                                        <li>Up to 40 people</li>
+                                        <li>6 tourguides</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card__side card__side--back card__side--back--2">
+                                <div class="card__cta">
+                                    <a href="#popup" class="btn btn--white">Visit!</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-1-of-3">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--3">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading--span card__heading--span--3">
+                                        The Animator
+                                    </span>
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li>5 day tour</li>
+                                        <li>Up to 15 people</li>
+                                        <li>3 tourguides</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card__side card__side--back card__side--back--3">
+                                <div class="card__cta">
+                                    <a href="#popup" class="btn btn--white">Visit!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="u-center-text u-margin-top-big">
+                    <a href="#" class="btn btn--blue">Discover all tours</a>
+                </div>
+            </section>
+            <section class="section-stories">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">
+                        React Projects
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="story">
+                        <figure class="story__shape">
+                            <img class="story__image" src="img/nat-8.jpg" alt="Person on a tour">
+                            <figcaption class="story__caption">
+                                Mary Smith
+                            </figcaption>
+                        </figure>
+                        <div class="story__text">
+                            <h3 class="heading-tertiary u-margin-bottom-small">I had the best week ever with my family.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia pariatur, reiciendis facere sit repellat ducimus id omnis magnam dolore ab temporibus atque iste iure. Areiciendis facere sit repellat ducimus id omnis magnam dolore ab temporibus atque iste iure </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="story">
+                        <figure class="story__shape">
+                            <img class="story__image" src="img/nat-9.jpg" alt="Person on a tour">
+                            <figcaption class="story__caption">
+                                Jack Wilson
+                            </figcaption>
+                        </figure>
+                        <div class="story__text">
+                            <h3 class="heading-tertiary u-margin-bottom-small">WOW! My life is completely different now</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia pariatur, reiciendis facere sit repellat ducimus id omnis magnam dolore ab temporibus atque iste iure. Areiciendis facere sit repellat ducimus id omnis magnam dolore ab temporibus atque iste iure </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="u-center-text u-margin-top-big">
+                    <a href="https://github.com/LouisDonDaza?tab=repositories" class="btn-text">See More Projects &rarr;</a>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <div class="footer__navigation">
+                            <ul class="footer__list">
+                                <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                                <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
+                                <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
+                                <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+                                <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-1-of-2">
+                        <p class="footer__copyright">
+                            Built by <a href="http://codingheroes.io/" class="footer__link">Jonas Schmedtmann</a> for his online course <a href="https://www.udemy.com/advanced-css-and-sass/?couponCode=RESOURCES4" class="footer__link">Advanced CSS and Sass Course   
+                            </a>. Copyright &copy; Jonas Schmedtman. You are 100% allowed to use this webpage for both personal and commercial use, but NOT to claim it as your own design. A credit to the original author, Jonas Schmedtman, is of course, highly appreciated.
+                        </p>
+                    </div>
+                </div>
+        </footer>
+    </body>
 </html>
+<!--
+        <section class="grid-test">
+            <div class="row">
+                <div class="col-1-of-2">
+                    Col 1 of 2
+                </div>
+                <div class="col-1-of-2">
+                    Col 2 of 2
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-2-of-3">
+                    Col 2 of 3
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-2-of-4">
+                    Col 2 of 4
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-3-of-4">
+                    Col 3 of 4
+                </div>
+            </div>
+
+        </section>
+        -->
